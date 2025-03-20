@@ -19,6 +19,11 @@
 <body>
     <!-- Navigation Bar -->
     <nav class="navbar">
+        <div class="menu-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
         <ul>
             <li><a href="#objective">Objective</a></li>
             <li><a href="#experience">Experience</a></li>
@@ -27,7 +32,6 @@
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
-
     <!-- Header Section -->
     <header class="header" data-aos="fade-down" style="padding-top: 6rem;"> <!-- Added padding-top to resolve the overlap issue -->
         <div class="profile-container">
@@ -37,6 +41,8 @@
             <!-- Personal Info -->
             <div class="profile-info">
                 <h1>ASHIKUL ISLAM</h1>
+                <p class="professional-title">Professional Nurse</p>
+                <p><i class="fas fa-user-nurse"></i> BNMC Registration No: 53970</p>
                 <p><i class="fas fa-map-marker-alt"></i> Cox's Bazar, Bangladesh</p>
                 <p><i class="fas fa-phone"></i> +8801831278989</p>
                 <p><i class="fas fa-envelope"></i> nurse.ashikulislam@gmail.com</p>
@@ -153,47 +159,48 @@
         <h2><i class="fas fa-graduation-cap"></i> Education</h2>
         <ul>
             <li><strong>Prime College of Nursing, Dhaka</strong> – Diploma in Nursing Science & Midwifery (2019)</li>
-            <li><strong>Salimullah Degree College</strong> – HSC (2016) – GPA: 3.17</li>
-            <li><strong>Islamia Government High School</strong> – SSC (2014) – GPA: 3.31</li>
+            <li><strong>Salimullah Degree College</strong> – HSC (2016)</li>
+            <li><strong>Islamia Government High School</strong> – SSC (2014)</li>
         </ul>
     </section>
 
     <!-- Skills Section -->
     <section id="skills" class="section" data-aos="fade-up">
         <h2><i class="fas fa-tools"></i> Skills</h2>
-        <ul style="color: white;"></ul>
-            <li>Intensive patient management</li>
-            <li>CV line assist & dressing</li>
-            <li>Wound care</li>
-            <li>Intubation & extubation assist</li>
-            <li>Ventilator & defibrillator operation</li>
-            <li>Microsoft Office & Adobe Photoshop</li>
+        <ul style="color: white;">
+            <li><i class="fas fa-procedures"></i> Intensive patient management</li>
+            <li><i class="fas fa-syringe"></i> CV line assist & dressing</li>
+            <li><i class="fas fa-band-aid"></i> Wound care</li>
+            <li><i class="fas fa-lungs"></i> Intubation & extubation assist</li>
+            <li><i class="fas fa-heartbeat"></i> Ventilator & defibrillator operation</li>
+            <li><i class="fas fa-desktop"></i> Microsoft Office & Adobe Photoshop</li>
         </ul>
     </section>
 
     <!-- Contact Section -->
     <section id="contact" class="section" data-aos="fade-up">
         <h2><i class="fas fa-envelope"></i> Contact Me</h2>
-        <form id="contactForm" action="https://formspree.io/f/mwpvyjdk" method="POST">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="message">Message</label>
-            <textarea id="message" name="message" required></textarea>
-
-            <button type="submit">Send</button>
-        </form>
+        <div class="contact-form-container">
+            <form id="contactForm">
+                <div class="form-group">
+                    <input type="text" id="name" placeholder=" ">
+                    <label for="name">Name</label>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" placeholder=" ">
+                    <label for="email">Email</label>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" rows="5" placeholder=" "></textarea>
+                    <label for="message">Message</label>
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
         <div id="formMessage" style="display:none;"></div>
     </section>
 
-    <!-- Map Section -->
-    <section id="map" class="section">
-        <h2><i class="fas fa-map-marker-alt"></i> My Location</h2>
-        <div id="locationMap"></div> <!-- Map container with updated styles -->
-    </section>
+
 
     <script src="js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>

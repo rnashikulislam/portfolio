@@ -19,27 +19,45 @@ function initMap() {
     }
 }
 
+// Create scroll progress indicator
+const createScrollProgress = () => {
+    const scrollProgress = document.createElement('div');
+    scrollProgress.className = 'scroll-progress';
+    document.body.appendChild(scrollProgress);
+    return scrollProgress;
+};
+
+// Update scroll progress
+const scrollProgress = createScrollProgress();
+window.addEventListener('scroll', () => {
+    const windowHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    const scrolled = (window.scrollY / windowHeight) * 100;
+    scrollProgress.style.width = `${scrolled}%`;
+});
+
 // Initialize when DOM loads
 document.addEventListener('DOMContentLoaded', () => {
     // Initialize Map
     initMap();
 
+    // Initialize AOS
+    AOS.init({
+        duration: 1000,
+        once: false,
+        mirror: false,
+        offset: 100
+    });
+
     // Intersection Observer for Animations
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if(entry.isIntersecting) {
-                entry.target.classList.add('visible'); // Add class to trigger animation when element is in view
+                entry.target.classList.add('visible');
             }
         });
-    }, { threshold: 0.1 }); // Trigger animation when 10% of the element is in view
+    }, { threshold: 0.1 });
 
-    // Observe elements with class 'timeline-card'
-    document.querySelectorAll('.timeline-card').forEach(card => {
-        observer.observe(card);
-    });
-
-    // Observe elements with class 'skill-item' for animation
-    document.querySelectorAll('.skill-item').forEach(item => {
+    document.querySelectorAll('.timeline-card, .skill-item').forEach(item => {
         observer.observe(item);
     });
 });
