@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="assets/profile-photo.jpg" type="image/jpeg">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional Nurse with critical care and emergency experience. Specialized in intensive patient management, triage protocols, and infectious disease control.">
+    <meta property="og:title" content="Ashikul Islam - Professional Nurse">
+    <meta property="og:description" content="Critical care, triage, and infectious disease control expertise. BNMC Registered Nurse with international healthcare experience.">
+    <meta property="og:image" content="assets/profile-photo.jpg">
+    <title>Ashikul Islam - Professional Nurse</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        #locationMap {
+            height: 300px; /* Adjust the height as needed */
+            width: 80%; /* Adjust the width as needed */
+            max-width: 600px; /* Set a maximum width */
+            margin: 0 auto; /* Center the map */
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="menu-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul>
+            <li><a href="#objective">Objective</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#training">Training</a></li>
+            <li><a href="#languages">Languages</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <!-- Header Section -->
+    <header class="header" data-aos="fade-down" style="padding-top: 6rem;"> <!-- Added padding-top to resolve the overlap issue -->
+        <div class="profile-container">
+            <!-- Profile Picture -->
+            <img src="assets/profile-photo.jpg" alt="Ashikul Islam" class="profile-picture" />
+            
+            <!-- Personal Info -->
+            <div class="profile-info">
+                <h1>ASHIKUL ISLAM</h1>
+                <p class="professional-title">Professional Nurse</p>
+                <p><i class="fas fa-user-nurse"></i> BNMC Registration No: 53970</p>
+                <p><i class="fas fa-map-marker-alt"></i> Cox's Bazar, Bangladesh</p>
+                <p><i class="fas fa-phone"></i> +8801686453006</p>
+                <p><i class="fas fa-envelope"></i> nurse.ashikulislam@gmail.com</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Objective Section -->
+    <section id="objective" class="section" data-aos="fade-up">
+        <h2><i class="fas fa-bullseye"></i> Objective</h2>
+        <p>Seeking a challenging role in critical care nursing within an international healthcare setting, where I can utilize my expertise in emergency patient management, infectious disease control, and triage protocols. Aspiring to advance into leadership positions to mentor fellow nurses, foster a culture of continuous learning, and contribute to positive patient outcomes.</p>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section" data-aos="fade-up">
+        <h2><i class="fas fa-briefcase"></i> Professional Experience</h2>
+    
+        <div class="experience">
+            <h3><img src="assets/MSF.ico" alt="MSF logo" style="width:50px;height:auto;margin-right:15px;vertical-align:middle;" />Médecins Sans Frontières (MSF) OCP Bangladesh</h3>
+            <p><strong>Nurse (Emergency, IPD, ICU)</strong></p>
+            <p><em>June 2025-Present</em></p>
+            <ul style="color: white;">
+                <li>Managed acute medical and trauma cases across emergency, IPD, and ICU settings.</li>
+                <li>Provided critical care and patient oversight, including admissions, medications, and monitoring.</li>
+                <li>Implemented rapid triage, ensuring efficient patient prioritization and resource allocation.</li>
+                <li>Collaborated with multidisciplinary teams, maintaining records, and adhering to protocols.</li>
+                <li>Participated in on-call rotations and emergency response, upholding infection control.</li>
+            </ul>
+        </div>
+
+        <div class="experience">
+            <h3><img src="assets/IOM.ico" alt="IOM logo" style="width:50px;height:auto;margin-right:15px;vertical-align:middle;" />International Organization for Migration (IOM) under EIL</h3>
+            <p><strong>Nurse<br>Project of International Organization for Migration (IOM) Under Enroute International Limited at IOM PHCC Camp 19,Ukhiya</strong></p>
+            <p><em>February 2024- June 2025</em></p>
+            <ul style="color: white;">
+                <li>Implement universal hygiene standards, infection control, and bio-hazard prevention protocols.</li>
+                <li>Provide patient care, administer treatments, assist in consultations, and educate patients/families.</li>
+                <li>Triage and prioritize emergency cases, administer first aid, and refer critical patients to physicians.</li>
+                <li>Monitor patient health, document medical data, and report emergencies or deteriorations.</li>
+                <li>Manage pharmacy inventory, monitor equipment functionality, and report malfunctions.</li>
+                <li>Train and supervise support staff, ensuring adherence to protocols and teamwork.</li>
+            </ul>
+        </div>
+
+        <div class="experience">
+            <h3><img src="assets/IOM.ico" alt="IOM logo" style="width:50px;height:auto;margin-right:15px;vertical-align:middle;" />International Organization for Migration (IOM) under EIL</h3>
+            <p><strong>Nurse<br>Project of International Organization for Migration (IOM) Under Enroute International Limited</strong></p>
+            <p><em>November 2022 – February 2024</em></p>
+            <ul style="color: white;">
+                <li>Planned and organized nursing activities, supervised nursing staff, trained community staff, and coordinated duty rosters.</li>
+                <li>Administered treatments, monitored medication usage, ensured proper hygiene, and collaborated with healthcare teams.</li>
+                <li>Contributed to monthly reports, managed international medicine orders, and ensured compliance with standards and regulations.</li>
+            </ul>
+        </div>
+      
+        <div class="experience">
+            <h3><img src="assets/Iqarus logo.ico" alt="Iqarus logo" style="width:50px;height:auto;margin-right:15px;vertical-align:middle;" />United Nations Medical Treatment Facility / UN Clinic (UNHCR & Iqarus)</h3>
+            <p><strong>General Nurse</strong></p>
+            <p><em>December 2021 – February 2022</em></p>
+            <ul style="color: white;">
+                <li>Managed COVID-19 patients.</li>
+                <li>Handled common flu cases.</li>
+                <li>Managed IPD admitted patients.</li>
+                <li>Worked as a Medical Escort Nurse.</li>
+                <li>Collaborated effectively with international colleagues.</li>
+                <li>Conducted phone consultations with non-admitted patients, updating vital signs and maintaining surveillance tracking sheets in Excel.</li>
+                <li>Maintained triage protocols.</li>
+            </ul>
+        </div>
+        
+        <div class="experience">
+            <h3><img src="assets/UNHCR logo.ico" alt="UNHCR logo" style="width:50px;height:auto;margin-right:15px;vertical-align:middle;" />Enroute International Limited</h3>
+            <p><strong>Senior Staff Nurse (ICU & HDU)<br>Special Project of UNHCR under Enroute International Limited at Cox's Bazar Sadar Hospital</strong></p>
+            <p><em>June 2020 – December 2021</em></p>
+            <ul style="color: white;">
+                <li>Recorded all patient care details, including vital signs and procedures, and reported concerns to physicians.</li>
+                <li>Trained to quickly respond to life-threatening situations like cardiac arrest and provide immediate care.</li>
+                <li>Stayed current on medical advancements, attended educational courses, and maintained certifications.</li>
+                <li>Managed mechanical ventilators, monitored oxygen levels, and adjusted settings as needed.</li>
+                <li>Worked closely with physicians and other healthcare professionals to develop care plans and support families.</li>
+                <li>Assessed vital signs, monitored symptoms, and reported changes to physicians.</li>
+                <li>Administered medication, managed IV lines, performed wound care, and assisted with procedures as needed.</li>
+            </ul>
+        </div>
+
+        <div class="experience">
+            <h3><img src="assets/Ar Raha.ico" alt="Ar Raha logo" style="width:50px;height:auto;margin-right:15px;vertical-align:middle;" />Ar Raha Hospital & Diagnosis</h3>
+            <p><strong>Nurse</strong></p>
+            <p><em>December 2019 – May 2020</em></p>
+            <ul style="color: white;">
+                <li>Managed nursing staff, developed policies, and improved patient care.</li>
+                <li>Stayed updated on medical advancements through education and training.</li>
+                <li>Recorded patient care accurately and reported concerns to the healthcare team.</li>
+                <li>Advocated for patients' needs, rights, and emotional support.</li>
+                <li>Administered medications, monitored vital signs, and collaborated on care plans.</li>
+                <li>Educated patients and families on health conditions and self-care techniques.</li>
+            </ul>
+        </div>
+        
+        <button class="read-more-btn" onclick="toggleExperience()">Show More</button>
+        <script>
+            function toggleExperience() {
+            const experiences = document.querySelectorAll('.experience');
+            const button = document.querySelector('.read-more-btn');
+            experiences.forEach((experience, index) => {
+                if (index >= 2) {
+                experience.style.display = experience.style.display === 'none' ? 'block' : 'none';
+                }
+            });
+            button.textContent = button.textContent === 'Show More' ? 'Show Less' : 'Show More';
+            }
+
+            // Initially hide experiences beyond the first two
+            document.addEventListener('DOMContentLoaded', () => {
+            const experiences = document.querySelectorAll('.experience');
+            experiences.forEach((experience, index) => {
+                if (index >= 2) {
+                experience.style.display = 'none';
+                }
+            });
+            });
+        </script>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section" data-aos="fade-up">
+        <h2><i class="fas fa-graduation-cap"></i> Education</h2>
+        <ul>
+            <li><strong>Prime College of Nursing, Dhaka</strong> – Diploma in Nursing Science & Midwifery (2019)</li>
+            <li><strong>Salimullah Degree College</strong> – HSC (2016)</li>
+            <li><strong>Islamia Government High School</strong> – SSC (2014)</li>
+        </ul>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section" data-aos="fade-up">
+        <h2><i class="fas fa-tools"></i> Skills</h2>
+        <ul style="color: white;">
+            <li><i class="fas fa-procedures"></i> Intensive patient management</li>
+            <li><i class="fas fa-syringe"></i> CV line assist & dressing</li>
+            <li><i class="fas fa-band-aid"></i> Wound care</li>
+            <li><i class="fas fa-lungs"></i> Intubation & extubation assist</li>
+            <li><i class="fas fa-heartbeat"></i> Ventilator & defibrillator operation</li>
+            <li><i class="fas fa-desktop"></i> Microsoft Office & Adobe Photoshop</li>
+        </ul>
+    </section>
+
+    <!-- Training Section -->
+    <section id="training" class="section" data-aos="fade-up">
+        <h2><i class="fas fa-certificate"></i> Training</h2>
+        <ul style="color: white;">
+            <li><i class="fas fa-graduation-cap"></i> mhGAP<br><em>From World Health Organization (WHO)</em></li>
+            <li><i class="fas fa-shield-virus"></i> IPC (Infection Control and Prevention)<br><em>From World Health Organization (WHO)</em></li>
+            <li><i class="fas fa-virus-slash"></i> Clinical Case Management of COVID-19<br><em>From World Health Organization (WHO)</em></li>
+        </ul>
+    </section>
+
+    <!-- Languages Section -->
+    <section id="languages" class="section" data-aos="fade-up">
+        <h2><i class="fas fa-language"></i> Languages</h2>
+        <div class="languages-container">
+            <div class="language-card">
+                <div class="language-icon">
+                    <i class="fas fa-flag"></i>
+                </div>
+                <h3>Bangla</h3>
+                <div class="language-skills">
+                    <span class="skill-badge"><i class="fas fa-book-open"></i> Read</span>
+                    <span class="skill-badge"><i class="fas fa-pen"></i> Write</span>
+                    <span class="skill-badge"><i class="fas fa-comments"></i> Speak</span>
+                </div>
+            </div>
+            <div class="language-card">
+                <div class="language-icon">
+                    <i class="fas fa-flag-usa"></i>
+                </div>
+                <h3>English</h3>
+                <div class="language-skills">
+                    <span class="skill-badge"><i class="fas fa-book-open"></i> Read</span>
+                    <span class="skill-badge"><i class="fas fa-pen"></i> Write</span>
+                    <span class="skill-badge"><i class="fas fa-comments"></i> Speak</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section" data-aos="fade-up">
+        <h2><i class="fas fa-envelope"></i> Contact Me</h2>
+        <div id="locationMap"></div>
+    </section>
+
+
+
+    <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script> <!-- Include Leaflet.js for map functionality -->
+    <script>
+        AOS.init(); // Initialize AOS animations
+
+        // Map Initialization
+        function initMap() {
+            const mapContainer = document.getElementById('locationMap');
+            if (mapContainer) {
+                const map = L.map(mapContainer).setView([21.4272, 92.0058], 13); // Set the map's initial location and zoom level
+                L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map); // Use OpenStreetMap tiles
+                L.marker([21.4272, 92.0058]).addTo(map) // Add a marker at the specified location
+                    .bindPopup('Current Location: Ukhiya, Cox’s Bazar'); // Popup message
+            }
+        }
+
+        // Initialize when DOM loads
+        document.addEventListener('DOMContentLoaded', () => {
+            initMap();
+        });
+
+        // Mobile menu toggle
+        document.querySelector('.menu-icon')?.addEventListener('click', () => {
+            document.querySelector('.navbar ul')?.classList.toggle('open');
+        });
+    </script>
+</body>
+</html>
